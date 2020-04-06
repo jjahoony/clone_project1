@@ -38,7 +38,6 @@ h1 {
   padding-right: 80px;
   padding-top: 30px;
   background-color: thistle;
-  cursor: pointer;
   position: unset;
   font-size: 10px;
   display: flex;
@@ -54,6 +53,19 @@ h1 {
 .navigate,
 .hamburger,
 .featured_food {
+  cursor: pointer;
   width: 160px;
   height: 200px;
+}
+.line {
+  z-index: 1;
+  left: 50%; /*to doing this, I struggled for 2 hours*/
+  transform: translate(-50%); /*to doing this, I struggled for 2 hours*/
+  display: -webkit-flex;
+  overflow: auto;
+  position: -webkit-fixed; /* for mobile */
+  position: fixed;
+  bottom: 0;
+  padding: 5px;
+  border: 2px;
 }
