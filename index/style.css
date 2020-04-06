@@ -1,0 +1,30 @@
+.menu {
+  left: 50%; /*to doing this, I struggled for 2 hours*/
+  transform: translate(-50%); /*to doing this, I struggled for 2 hours*/
+  font-size: 10px;
+  display: flex;
+  display: -webkit-flex;
+  overflow: auto;
+  position: -webkit-fixed; /* for mobile */
+  position: fixed;
+  bottom: 0;
+  padding: 5px;
+  border: 2px;
+  margin-bottom: 30px;
+}
+body {
+  text-align: center;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aliceblue;
+}
+.home,
+.discovery,
+.bookmark,
+.top_foodie,
+.profile {
+  cursor: pointer;
+  width: 95px;
+  height: 100px;
+  text-align: center;
+}
